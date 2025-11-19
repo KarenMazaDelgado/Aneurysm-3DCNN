@@ -1,85 +1,45 @@
-# Tic-Tac-Toe AI with Minimax and Alpha-Beta Pruning
-
-## Overview
-
-A web-based Tic-Tac-Toe game comparing Minimax and Alpha-Beta pruning algorithms.
-
-## Features
-
-- Three game modes: Human vs Human, Human vs AI, AI vs AI
-- Algorithm selection (Minimax or Alpha-Beta)
-- Real-time performance metrics
-- Algorithm comparison tool
-- Modern, intuitive UI
-
-## Requirements
-
-- Python 3.7+
-- Flask
-- matplotlib
-
-## Installation
-
-1. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Application
-
-1. Start the Flask server:
-
-```bash
-python server.py
-```
-
-2. Open browser to: `http://localhost:5000`
-
-## How to Use
-
-### Human vs AI Mode
-
-1. Select "Player vs AI" from Game Mode dropdown
-2. Choose your algorithm (Minimax or Alpha-Beta)
-3. Select whether to play as X (first) or O (second)
-4. Click "New Game"
-5. Click cells to make your move
-
-### AI vs AI Mode
-
-1. Select "AI vs AI" from Game Mode dropdown
-2. Choose algorithms for both AIs
-3. Click "New Game"
-4. Watch the AIs battle automatically
-5. Use "Pause" button to control playback
-
-### Algorithm Comparison
-
-1. Play at least one move
-2. Click "Compare Algorithms"
-3. View side-by-side performance metrics
-
-## Algorithms
-
-### Minimax
-
-- Explores all possible game states
-- Guarantees optimal play
-- Higher node count
-
-### Alpha-Beta Pruning
-
-- Optimized version of Minimax
-- Prunes unnecessary branches
-- Same optimal result, fewer nodes explored
-
-## Performance Metrics
-
-- **Decision Time**: Time taken for AI to decide move
-- **Nodes Explored**: Total game states evaluated
-- **Pruning Efficiency**: Percentage of nodes pruned (Alpha-Beta only)
-
-## Team Members
-
+AI4ALL Ignite Project README (Clean Draft)
+Project Title
+Evaluating AI’s Capability to Detect Brain Vessel Abnormalities Compared to Radiologist Review
+This project investigates how well AI models can identify abnormal blood vessel patterns in brain MRA scans compared to traditional radiologist review. Our group applied Python, deep learning methods, and biomedical imaging concepts within the AI4ALL Ignite accelerator to better understand how AI can support medical decision-making.
+Problem Statement
+Stroke prevention and early detection of vascular abnormalities rely heavily on accurate interpretation of brain MRA scans. Radiologists review these images manually, a process that is time-consuming and vulnerable to fatigue or human error. With the increasing volume of patients and imaging data, there is a growing need for tools that can support radiologists and improve diagnostic consistency.
+This project explores whether AI — specifically deep learning models — can classify healthy and abnormal vessel segments with meaningful accuracy. Understanding AI’s strengths and weaknesses in this task has real impact on clinical workflows, second-reader systems, and neurovascular diagnostics.
+Key Results (Expected / In Progress)
+Processed and explored the VesselMNIST3D dataset containing 3D brain vessel segments.
+Identified major sources of dataset imbalance, including a much larger number of healthy samples compared to aneurysm samples.
+Began prototyping a 3D-CNN (3D ResNet) to classify vessel patterns.
+Analyzed potential biases caused by image size, sampling methods, and demographic unknowns.
+Established baseline evaluation metrics (accuracy, precision, recall, FPR) to compare model performance with radiologist benchmarks.
+Methodologies
+To carry out the project, we:
+Used Python to load, preprocess, and visualize 3D vessel segments from the VesselMNIST3D dataset.
+Built a 3D Convolutional Neural Network (3D-CNN), specifically a 3D ResNet architecture, to classify healthy vs abnormal vessel segments.
+Evaluated the model using metrics commonly used in medical imaging, including accuracy, recall, and false-positive rates.
+Identified dataset-level biases such as limited image resolution and imbalanced class distribution.
+Compared AI outputs to expected radiologist performance to understand the model’s strengths and limitations.
+Sources of Bias Identified
+Low image resolution may limit the model’s ability to detect subtle vessel abnormalities.
+Unknown demographics of the image contributors may reduce generalizability across diverse populations.
+Class imbalance, with many more healthy samples than aneurysm samples, can cause the model to favor predicting healthy vessels.
+Data Sources
+VesselMNIST3D Dataset (MedMNIST)
+Intra: 3D Intracranial Aneurysm Dataset (Xi Yang et al., CVPR 2020)
+Related scientific literature provided through MedMNIST documentation and biomedical imaging research.
+Technologies Used
+Python
+PyTorch
+NumPy
+pandas
+3D-CNN / 3D ResNet
+Jupyter Notebook
+MedMNIST tools and utilities
+Authors
+This project was completed as part of the AI4ALL Ignite Program by:
+Folabomi Longe
+Oluwatodimu Adegoke
 Ousman Bah
+Karen Maza Delgado
+Maria Garcia
+Chimin Liu
+(You can add emails or GitHub links if needed.)
