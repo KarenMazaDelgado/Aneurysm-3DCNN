@@ -1,0 +1,85 @@
+# Tic-Tac-Toe AI with Minimax and Alpha-Beta Pruning
+
+## Overview
+
+A web-based Tic-Tac-Toe game comparing Minimax and Alpha-Beta pruning algorithms.
+
+## Features
+
+- Three game modes: Human vs Human, Human vs AI, AI vs AI
+- Algorithm selection (Minimax or Alpha-Beta)
+- Real-time performance metrics
+- Algorithm comparison tool
+- Modern, intuitive UI
+
+## Requirements
+
+- Python 3.7+
+- Flask
+- matplotlib
+
+## Installation
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+1. Start the Flask server:
+
+```bash
+python server.py
+```
+
+2. Open browser to: `http://localhost:5000`
+
+## How to Use
+
+### Human vs AI Mode
+
+1. Select "Player vs AI" from Game Mode dropdown
+2. Choose your algorithm (Minimax or Alpha-Beta)
+3. Select whether to play as X (first) or O (second)
+4. Click "New Game"
+5. Click cells to make your move
+
+### AI vs AI Mode
+
+1. Select "AI vs AI" from Game Mode dropdown
+2. Choose algorithms for both AIs
+3. Click "New Game"
+4. Watch the AIs battle automatically
+5. Use "Pause" button to control playback
+
+### Algorithm Comparison
+
+1. Play at least one move
+2. Click "Compare Algorithms"
+3. View side-by-side performance metrics
+
+## Algorithms
+
+### Minimax
+
+- Explores all possible game states
+- Guarantees optimal play
+- Higher node count
+
+### Alpha-Beta Pruning
+
+- Optimized version of Minimax
+- Prunes unnecessary branches
+- Same optimal result, fewer nodes explored
+
+## Performance Metrics
+
+- **Decision Time**: Time taken for AI to decide move
+- **Nodes Explored**: Total game states evaluated
+- **Pruning Efficiency**: Percentage of nodes pruned (Alpha-Beta only)
+
+## Team Members
+
+Ousman Bah
